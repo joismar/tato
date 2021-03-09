@@ -9,8 +9,15 @@
 #text, #result {
   max-width: 430px;
 }
+* {
+  box-sizing: border-box;
+}
 body {
+  margin: 0 auto;
   padding: 10px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
   font-family: 'Nunito', sans-serif;
   background-color: var(--bg-dark);
   color: var(--white);
@@ -20,6 +27,7 @@ body {
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 900px;
+  align-content: center;
 }
 textarea {
   width: 100%;
