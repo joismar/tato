@@ -1,0 +1,38 @@
+<html>
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="mini-header">
+          <h3>Mode: </h3>
+          <select id="mode" class="mode" onchange="val()">
+            <div class="options">
+            <option value="m0">Pick a mode...</option>
+            <option style="background-color" value="m1">all lowercase</option>
+            <option value="m2">ALL UPPERCASE</option>
+            <option value="m3">First Uppercase</option>
+            <option value="m4">Intelligent Mode</option>
+            </div>
+          </select>
+        </div>
+        <textarea id="text" name="textarea" rows="10" onfocus="clearContents(this)" onkeyup="val()">Write the text here...</textarea>
+      </div>
+      <div class="result-outer">
+        <div class="mini-header">
+          <h3>Result:</h3>
+          <button onclick="copy()" class="copy-btn" id="copy">Copy</button>
+        </div>
+        <textarea name="result" id="result" rows="10"></textarea>
+      </div>
+      <div class="tuto">
+        <h3>Intelligent Mode Tutorial:</h3>
+        <p>Intelligent mode automatically corrects the most common scores such as:
+          <li>Capitalize the first letter of the words after punctuation and paragraph break.</li>
+          <li>Enter [space] after the comma.</li>
+  <li>Corrects unnecessary capitalization by giving the user the option of ## at the beginning of the word to CAPITALIZE it or # to Capitalize Only the First Letter. Ex: ##capitalize = CAPITALIZE and #capitalize = Capitalize.</li>
+        </p>
+        <p style="width:100%;text-align:center;">By Joismar @ Codepen</p>
+      </div>
+      <div class="toast" id="toast"></div>
+    </div>
+  </body>
+</html>
